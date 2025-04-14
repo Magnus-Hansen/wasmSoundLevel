@@ -1,8 +1,9 @@
-For wasm:
-Compile Rust into WebAssembly:
+-- For wasm
+
+First compile:
 
 wasm-pack build --target web
 
-Start a local server:
+Then start a local server:
 
 npx serve
