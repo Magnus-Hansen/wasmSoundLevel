@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/wasmSound-develop/wasm-sound/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/wasmSound-develop/wasm-sound/target" />
+      <excludeFolder url="file://$MODULE_DIR$/wasmDemo-develop/wasm-demo/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

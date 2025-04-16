@@ -1,9 +1,7 @@
--- For wasm
+Work in progress
 
-First compile:
+build
+wasm-pack  build --target web
 
-wasm-pack build --target web
-
-Then start a local server:
-
+Start the server
 npx serve
