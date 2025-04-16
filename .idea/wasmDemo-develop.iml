@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wasmSound-develop/wasm-sound/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wasmDemo-develop/wasm-demo/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/server/target" />
       <excludeFolder url="file://$MODULE_DIR$/wasmSound-develop/wasm-sound/target" />
       <excludeFolder url="file://$MODULE_DIR$/wasmDemo-develop/wasm-demo/target" />

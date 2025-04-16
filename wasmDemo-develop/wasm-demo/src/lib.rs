@@ -33,4 +33,17 @@ pub fn display_string_in_browser(message: &str) {
     document.body().expect("document should have a body").append_child(&div).expect("Should append div to body");
 }
 
+pub fn display_sound_level_in_browser(sound_level: i32) {
+    let window = window().expect("no global `window` exists");
+    let document = window.document().expect("should have a document on window");
+
+    // Create a new div element
+    let div = document.create_element("div").expect("should create a div");
+
+    // Set the div inner HTML to the sound level
+    div.set_inner_html(&format!("Sound Level: {}", sound_level));
+
+    document.body().expect("document should have a body").append_child(&div).expect("Should append div to body");
+}
+
 
