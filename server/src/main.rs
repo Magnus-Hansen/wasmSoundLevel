@@ -21,7 +21,7 @@ async fn main() {
 
         loop {
             let (stream, _) = listener.accept().await.unwrap();
-            let ws_stream = accept_async(stream).await.unwrap();
+            let ws_stream = accept_async(stream).await.unwrap(); // Handshake the connection
             println!("New websocket client connected");
 
             let (write, _) = ws_stream.split();
@@ -36,7 +36,7 @@ async fn main() {
     let mut buf = [0u8; 1024];
     loop {
         println!("[UDP] Waiting for data...");
-        println!("[UDP] Got UDP packet of size {}", buf.len());
+        
         let (len, _) = udp_socket.recv_from(&mut buf).await.unwrap();
         if len < 4 { continue; }
 

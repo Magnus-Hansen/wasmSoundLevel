@@ -1,10 +1,15 @@
 Work in progress
 
+Remember to run serialreader in microbit folder
+
 build
 wasm-pack  build --target web
 
 Start the server
-npx serve
+cargo run --release
+
+Serve files
+npx serve -l 8000
 
 
 [Microbit]

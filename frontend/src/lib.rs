@@ -47,6 +47,7 @@ pub fn display_string_in_browser(message: &str) {
     document.body().expect("document should have a body").append_child(&div).expect("Should append div to body");
 }
 
+#[wasm_bindgen]
 pub fn display_sound_level_in_browser(sound_level: i32) {
     let window = window().expect("no global `window` exists");
     let document = window.document().expect("should have a document on window");

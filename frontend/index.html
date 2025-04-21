@@ -3,6 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Noise Level Monitor</title>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 2em;
+      background: #121212;
+      color: #00FF99;
+    }
+    #sound-level {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 <h1>Live Noise Level</h1>
@@ -10,7 +22,12 @@
 
 <script type="module">
   import init from "./pkg/wasm_demo.js";
-  init(); // This calls #[wasm_bindgen(start)] → main_js() → start_websocket()
+  async function run() {
+    await init(); // This calls #[wasm_bindgen(start)] → main_js() → start_websocket()
+  }
+
+  run();
+
 </script>
 </body>
 </html>
